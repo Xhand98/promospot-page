@@ -30,7 +30,6 @@ main {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
 }
 
 .Img .carrito{
