@@ -3,23 +3,10 @@
     src: url('Ubuntu-Medium.ttf');
 }
 
-* {
-    font-family: darkest;
-    scroll-behavior: smooth;
-}
-
 .send-cont {
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
 }
 
 #insertartexto {
@@ -35,17 +22,21 @@ body {
 article {
     color: red;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600px;
+    font-family: darkest;
+    scroll-behavior: smooth;
+
 }
 
 .chatbot {
-    width: 45%;
-    height: 100vh;
+    height: 100cqh;
+    width: 650px;
     background-color: black;
     overflow: hidden;
-    max-width: 45%;
     overflow-x: hidden;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
 }
 
 #botones {

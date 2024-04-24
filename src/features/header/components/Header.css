@@ -5,7 +5,7 @@
   /* Estilos para el encabezado principal */
   .main-header{
     background: #55A5DB; /* Fondo del encabezado */
-    width: 99.4cqw; /* Ancho completo */
+    width: 100%; /* Ancho completo */
     height: 47px; /* Altura */
   }
   
@@ -13,9 +13,8 @@
   nav{
     position: absolute; /* Posicionamiento absoluto */
     left:0; /* Alineación a la izquierda */
-    top:0; /* Alineación arriba */
     width: 200px; /* Ancho */
-    top:50px; /* Posicionamiento a partir de la parte superior */
+    top: 47px; /* Posicionamiento a partir de la parte superior */
     height:calc(100vh - 50px); /* Altura calculada */
     background:#2D6653; /* Fondo */
     transform:translateX(-100%); /* Desplazamiento fuera de la vista */
@@ -98,9 +97,10 @@
   }
   
   .buscador {
+    float: right;
+    margin-right: 20px;
     border-radius: 20px;
     background-color: white;
-    margin-left: 63%;
     border-color: transparent;
     margin-top: 13.5px;
     justify-content: center;

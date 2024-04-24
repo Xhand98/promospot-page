@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ToggleButton.css';
-import Chatbot from './Chatbot'; // Assuming Chatbot component is in the same directory
+import Chatbot from './Chatbot';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const ToggleButton = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -10,11 +12,14 @@ const ToggleButton = () => {
   };
 
   return (
+    <div className='button'>
     <div className="toggle-container">
       <button className={`toggle-button ${isToggled ? 'active' : ''}`} onClick={toggleHandler}>
-        {isToggled ? 'Close Chatbot' : 'Open Chatbot'}
+        {isToggled ? 'No' : 'Si'}
       </button>
-      {isToggled && <Chatbot />}
+      {isToggled && <div className='chatbotcontainer'><Chatbot /></div>}
+    </div>
+    <FontAwesomeIcon icon={ faBars } />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Chatbot = () => {
@@ -185,7 +185,7 @@ const Chatbot = () => {
                             </svg>
                         </div>
                     </div>
-                    <span>Send <FontAwesomeIcon icon={ faFacebook } /></span>
+                    <span>Send <FontAwesomeIcon icon={ faBars } /></span>
                 </button>
             </div>
             <input maxLength="50" type="text" id="insertartexto"></input>
