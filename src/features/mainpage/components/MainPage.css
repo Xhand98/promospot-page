@@ -17,7 +17,7 @@ main {
 
 .Img{
     display: flex;
-    gap: 30px;
+    justify-content: space-evenly;
     width: 100%;
     height: auto;
 }

@@ -56,7 +56,7 @@ const Chatbot = () => {
 
     const agregarMensaje = (mensaje) => {
         const agregar = document.getElementById('agregar');
-        agregar.innerHTML += `<div class="bot-response animation"><span class="bot-name">Robó</span><p class='agregado'><FontAwesomeIcon icon={ faRobot } className="icon" />${mensaje}</p></div>`;
+        agregar.innerHTML += `<div class="bot-response animation"><span class="bot-name">Robó</span><p class='agregado'>${ <FontAwesomeIcon icon={ faRobot } />}${mensaje}</p></div>`;
     };
 
     const holareal = (objid) => {

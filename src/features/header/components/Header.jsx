@@ -15,6 +15,7 @@ const Footer = () => {
             event.preventDefault();
 
             console.log(barravalue);
+            alert(`No hemos encontrado ${barravalue}`)
         }
     };
 

@@ -15,7 +15,6 @@ const menres = document.getElementById('mensajesfaltantes')
 
 var mensajeanterior = 'none'
 var mensajestot = 0
-var username //= prompt("Ingrese su usuario:")
 var numran
 var texto
 var textosi
