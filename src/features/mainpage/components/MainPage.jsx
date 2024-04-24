@@ -7,9 +7,9 @@ function MainPage() {
     <main>
 
       <div class="parrafo">
-      <p>
+        <h1>
           ¡Bienvenido { user } a nuestro sitio!
-        </p>
+        </h1>
 
         <p>
           !Disfruta de todas las ofertas y catálogos que tenemos disponible para
