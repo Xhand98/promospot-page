@@ -19,7 +19,6 @@ const ToggleButton = () => {
       </button>
       {isToggled && <div className='chatbotcontainer'><Chatbot /></div>}
     </div>
-    <FontAwesomeIcon icon={ faBars } />
     </div>
   );
 };

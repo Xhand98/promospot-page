@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faRobot, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 
 const Chatbot = () => {
@@ -56,7 +56,7 @@ const Chatbot = () => {
 
     const agregarMensaje = (mensaje) => {
         const agregar = document.getElementById('agregar');
-        agregar.innerHTML += `<div class="bot-response animation"><span class="bot-name">Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>>${mensaje}</p></div>`;
+        agregar.innerHTML += `<div class="bot-response animation"><span class="bot-name">Robó</span><p class='agregado'><FontAwesomeIcon icon={ faRobot } className="icon" />${mensaje}</p></div>`;
     };
 
     const holareal = (objid) => {
@@ -177,15 +177,8 @@ const Chatbot = () => {
         <div className="send-cont">
             <div className="btn-container">
                 <button className="send-button" id="send" onClick={ponermensaje}>
-                    <div className="svg-wrapper-1">
-                        <div className="svg-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <span>Send <FontAwesomeIcon icon={ faBars } /></span>
+                   
+                    <span>Send <FontAwesomeIcon icon={ faPaperPlane } /></span>
                 </button>
             </div>
             <input maxLength="50" type="text" id="insertartexto"></input>

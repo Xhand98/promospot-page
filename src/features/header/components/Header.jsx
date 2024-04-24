@@ -5,6 +5,21 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
     
 
 const Footer = () => {
+
+    const handleKeyPress = (event) => {
+        var barra = document.getElementById('searchbar')
+
+        var barravalue = barra.value
+
+        if (event.key === 'Enter') {
+            event.preventDefault();
+
+            console.log(barravalue);
+        }
+    };
+
+   
+
     return (
         <header class="main-header">
     <label for="btn-nav" class="btn-nav"><FontAwesomeIcon icon={ faBars }/></label>
@@ -41,7 +56,7 @@ const Footer = () => {
     </nav>
 
 
-    <input type="text" placeholder="¿Que buscas?" class="buscador" />
+    <input type="text" placeholder="¿Que buscas?" class="buscador" id='searchbar' onKeyDown={handleKeyPress} />
 
    
 </header>

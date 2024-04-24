@@ -16,6 +16,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .social-media {
