@@ -1,0 +1,129 @@
+/* Definición de variables CSS */
+:root{
+    --main-color:#fff; /* Color principal */
+  }
+  /* Estilos para el encabezado principal */
+  .main-header{
+    background: #55A5DB; /* Fondo del encabezado */
+    width: 99.4cqw; /* Ancho completo */
+    height: 47px; /* Altura */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav{
+    position: absolute; /* Posicionamiento absoluto */
+    left:0; /* Alineación a la izquierda */
+    top:0; /* Alineación arriba */
+    width: 200px; /* Ancho */
+    top:50px; /* Posicionamiento a partir de la parte superior */
+    height:calc(100vh - 50px); /* Altura calculada */
+    background:#2D6653; /* Fondo */
+    transform:translateX(-100%); /* Desplazamiento fuera de la vista */
+    transition:.4s ease; /* Transición suave */
+  }
+  
+  /* Estilos para elementos de la lista de navegación */
+  .navigation li{
+    list-style:none; /* Quita los marcadores de lista */
+  }
+  
+  /* Estilos para submenú */
+  .submenu {
+    display: none; /* Ocultar por defecto */
+    background-color:blue ;
+    border-radius: 0%;
+  }
+  
+  .submenu li {
+    margin-bottom: 25px;
+  }
+  
+  
+  
+  /* Mostrar submenú al pasar el ratón sobre el elemento de menú */
+  .menu li:hover > .submenu{
+    display: block; /* Mostrar */
+    padding: 30px;
+    position: relative;
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .navigation a{
+    color:var(--main-color); /* Color del texto */
+    display: block; /* Mostrar como bloque */
+    line-height:3.5; /* Altura de línea */
+    padding: 0 10px; /* Relleno */
+    text-decoration:none; /* Quitar subrayado */
+    transition:.4s ease; /* Transición suave */
+  
+  }
+  
+  /* Estilos al pasar el ratón sobre los enlaces de navegación */
+  .navigation a:hover{
+    transform:translateX(10%); /* Desplazamiento horizontal */
+  }
+  
+  /* Estilos para el botón de navegación */
+  #btn-nav{
+    display: none; /* Ocultar por defecto */
+  }
+  
+  /* Mostrar la barra de navegación cuando el botón está marcado */
+  #btn-nav:checked ~ nav{
+    transform:translateX(0); /* Mostrar la barra de navegación */
+  }
+  
+  /* Estilos para el botón de navegación */
+  .btn-nav{
+    color:var(--main-color); /* Color del texto */
+    font-size:30px; /* Tamaño de fuente */
+    position: absolute; /* Posicionamiento absoluto */
+    left:0; /* Alineación a la izquierda */
+    top:0; /* Alineación arriba */
+    cursor:pointer; /* Cursor apuntador */
+    padding:6.5px 15px; /* Relleno */
+    transition:.2s ease; /* Transición suave */
+    background:rgba(0,0,0,.1); /* Fondo */
+  }
+  
+  /* Estilos al pasar el ratón sobre el botón de navegación */
+  .btn-nav:hover{
+    background:rgba(0,0,0,.3); /* Cambio de fondo */
+  }
+  /* Estilo del buscador */
+  .buscador::placeholder {
+    color: black;
+  
+  
+  }
+  
+  .buscador {
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 63%;
+    border-color: transparent;
+    margin-top: 13.5px;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+  
+  }
+  
+  .Loterias a { 
+    background-color: skyblue;
+    
+  }
+  
+  .Farmacias a {
+    
+  background-color: yellow;
+  
+  }
+  .Supermercados a {
+  
+    background-color: aqua;
+  }
+  
+  
+  
+  

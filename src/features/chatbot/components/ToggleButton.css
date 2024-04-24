@@ -1,0 +1,23 @@
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .toggle-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
