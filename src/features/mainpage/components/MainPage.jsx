@@ -8,7 +8,7 @@ function MainPage() {
 
       <div class="parrafo">
         <h1>
-          ¡Bienvenido { user } a nuestro sitio!
+          ¡Bienvenido a nuestro sitio { user } !
         </h1>
 
         <p>

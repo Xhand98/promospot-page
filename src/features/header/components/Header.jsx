@@ -25,9 +25,10 @@ const Footer = () => {
         <header class="main-header">
     <label for="btn-nav" class="btn-nav"><FontAwesomeIcon icon={ faBars }/></label>
     <input type="checkbox" id="btn-nav" />
+
     <nav class="navigation">
         <ul class="menu">
-            <li class="Loterias"><a href="#">Loterias</a>
+            <li class="Loterias"><a href="#">Loterias uFUFUFSA</a>
                 <ul class="submenu" >
                     <li class="li Leidsa">Leidsa</li>
                     
@@ -54,6 +55,7 @@ const Footer = () => {
                 </ul>
             </li>
         </ul>
+
     </nav>
 
 
