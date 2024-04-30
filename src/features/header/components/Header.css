@@ -4,9 +4,9 @@
   }
   /* Estilos para el encabezado principal */
   .main-header{
-    background: #55A5DB; /* Fondo del encabezado */
+    background: var(--main-color); /* Fondo del encabezado */
     width: 100%; /* Ancho completo */
-    height: 47px; /* Altura */
+    height: 50px; /* Altura */
   }
   
   /* Estilos para la barra de navegación */
@@ -14,7 +14,7 @@
     position: absolute; /* Posicionamiento absoluto */
     left:0; /* Alineación a la izquierda */
     width: 200px; /* Ancho */
-    top: 47px; /* Posicionamiento a partir de la parte superior */
+    top: 50px; /* Posicionamiento a partir de la parte superior */
     height:calc(100vh - 50px); /* Altura calculada */
     background:#2D6653; /* Fondo */
     transform:translateX(-100%); /* Desplazamiento fuera de la vista */
@@ -74,7 +74,7 @@
   
   /* Estilos para el botón de navegación */
   .btn-nav{
-    color:var(--main-color); /* Color del texto */
+    color: #000; /* Color del texto */
     font-size:30px; /* Tamaño de fuente */
     position: absolute; /* Posicionamiento absoluto */
     left:0; /* Alineación a la izquierda */
@@ -83,6 +83,7 @@
     padding:6.5px 15px; /* Relleno */
     transition:.2s ease; /* Transición suave */
     background:rgba(0,0,0,.1); /* Fondo */
+    height: 50px;
   }
   
   /* Estilos al pasar el ratón sobre el botón de navegación */
@@ -97,15 +98,15 @@
   }
   
   .buscador {
-    float: right;
-    margin-right: 20px;
+    margin-left: 58%;
     border-radius: 20px;
     background-color: white;
     border-color: transparent;
-    margin-top: 13.5px;
+    margin-top: 7px;
     justify-content: center;
     width: 30%;
     height: 50%;
+    border: #000 2.25px solid;
   
   }
   
@@ -124,6 +125,49 @@
     background-color: aqua;
   }
   
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-left: 60px;
+  }
   
+  .pageName {
+    display: inline;
+    position: absolute;
+    top: 5px;
+    left: 130px;
+    color: #000;
+    font-size: 36px;
+  }
   
+  .btn-nav::after {
+    content: '';
+    width: 98.9cqw;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50px;
+    left: 0;  
+  }
   
+  .searchcont {
+    width: 100%;
+    height: 40px;
+    background-color: #FBDB18;
+    display: inline-block;
+  }
+
+  .iconcont {
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+  }
+
+  .buscador {
+    padding: 5px;
+    margin-right: 20px;
+  }
+
+  .iconcont > a {
+    margin-top: 7px;
+  }
