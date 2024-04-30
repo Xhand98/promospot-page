@@ -1,24 +1,31 @@
 import React from "react";
-import './MainPage.css';
-let user = prompt("Ingrese su usuario:")
+import "./MainPage.css";
+
+let user = prompt("Ingrese su usuario:");
 
 function MainPage() {
-    return (
+  return (
     <main>
-
-      <div class="parrafo">
+      <div className="parrafo">
         <h1>
-          ¡Bienvenido a nuestro sitio { user } !
+          ¡Bienvenido a nuestro sitio {user} !
         </h1>
 
         <p>
-          !Disfruta de todas las ofertas y catálogos que tenemos disponible para
-          ti{" "}
+          ¡Disfruta de todas las ofertas y catálogos que tenemos disponible para ti!
         </p>
-      <div class="Img">
-        <img src="https://dummyimage.com/600x400/000/fff" class="carrito" alt=""/>
-        <img src="https://dummyimage.com/600x400/000/fff" class="precio" alt="" />
-      </div>
+        <div className="Img">
+          <img
+            src="https://dummyimage.com/600x400/000/fff"
+            className="carrito"
+            alt="Carrito de compras"
+          />
+          <img
+            src="https://dummyimage.com/600x400/000/fff"
+            className="precio"
+            alt="Etiqueta de precio"
+          />
+        </div>
       </div>
     </main>
   );
