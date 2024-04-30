@@ -38,10 +38,10 @@ menres.innerText = `Mensajes faltantes para borrar: ${101-1-mensajestot}`
 
 //#*    [ MENSAJES ]    */
 
-const bot = `<div class="bot-response animation"><span class="bot-name">Robó</span><p class='agregado'><i class="fa-solid fa-robot icon"></i>></i>`
+const bot = `<div className="bot-response animation"><span className="bot-name">Robó</span><p className='agregado'><i className="fa-solid fa-robot icon"></i>></i>`
 const finbot =  `</p></div>`
-const user = `<div class="user-response animation"><span class="username">${username}</span><p class='agregado'>`
-const finuser = ` < <i class="fa-regular fa-circle-user user-icon"></i></p></div>`
+const user = `<div className="user-response animation"><span className="username">${username}</span><p className='agregado'>`
+const finuser = ` < <i className="fa-regular fa-circle-user user-icon"></i></p></div>`
 
 const holaswitch = [
     bot + 'Hola' + finbot,
