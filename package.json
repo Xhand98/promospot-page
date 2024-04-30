@@ -241,5 +241,5 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Hendrick",
-  "license": "UNLICENSED"
+  "license": "MIT"
 }
