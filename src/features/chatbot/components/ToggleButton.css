@@ -1,6 +1,6 @@
 .toggle-container {
-  position: absolute;
-  bottom: 1px;
+  position: fixed;
+  bottom: 5px;
   right: 10px;
   display: flex;
   align-content: space-evenly;
